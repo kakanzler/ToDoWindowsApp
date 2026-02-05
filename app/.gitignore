@@ -1,0 +1,30 @@
+# Node / Vite
+.vscode/
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Rust / Cargo
+target/
+**/target/
+# Cargo.lock は基本コミット推奨（無視しない）
+
+# Tauri artifacts
+src-tauri/target/
+src-tauri/gen/
+src-tauri/.tauri/
+src-tauri/tauri-dist/
+
+# Tauri signing keys (never commit)
+src-tauri/private.key
+src-tauri/key.pem
+src-tauri/*.key
+src-tauri/*.pem
+src-tauri/*.pfx
+src-tauri/*.p12
+
+# Optional app data
+todos.json
+data/
+storage/
