@@ -9,6 +9,12 @@ struct Todo
     id: u32,
     title: String,
     completed: bool,
+    #[serde(default)]
+    dueDate: Option<String>,
+    #[serde(default)]
+    workedAt: Option<String>,
+    #[serde(default)]
+    doneAt: Option<String>,
 }
 
 fn todos_path(app: &AppHandle) -> Result<PathBuf, String> {
